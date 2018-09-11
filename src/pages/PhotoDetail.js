@@ -5,11 +5,12 @@ import { connect } from "react-redux";
 class UnconnectedPhotoDetail extends React.Component {
 	render() {
 		return (
-            <div>
-                <Link to='/'><div className="router-buttons">Lista</div></Link>
-                <div style={{backgroundImage:`url(${this.props.url})`}} className="features-image-container"></div>
+            <div className="detail__view-wrapper">
+            
+                <Link to='/'><button className="menu-btn"></button></Link>
+                <div style={{backgroundImage:`url(${this.props.url})`}}></div>
                 <img className="main-img" src={this.props.url} />
-                </div>
+            </div>
            
 		);
 	}

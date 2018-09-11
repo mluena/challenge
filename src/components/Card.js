@@ -10,7 +10,7 @@ class Card extends React.Component {
 	render() {
 		return(
 			<li className="card__container" onClick={this.props.selection}>
-			    <div style={{backgroundImage:`url(${this.props.url})`}} className="card__container">
+			    <div style={{backgroundImage:`url(${this.props.url})`}} className="card">
 					<h2 className="img-title">{this.props.title}</h2>
 					<img className="thumbnail-img" alt="thumbnail" src={this.props.thumbnailUrl}/>
 				</div>

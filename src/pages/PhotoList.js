@@ -41,8 +41,8 @@ class UnconnectedPhotoList extends React.Component {
 	
 	render() {
 		return(
-			<div>
-				<button onClick={this.onSort}>Ordenar</button>
+			<div className="grid-wrapper">
+				<button type="button" className="sort-btn" onClick={this.onSort}></button>
 				<ul className="photos__main-container">
 					{this.props.photos.map((photo) => this.renderPhoto(photo))}
 				</ul>
